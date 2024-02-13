@@ -23,10 +23,10 @@ import (
 	"strings"
 	"testing"
 
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/mockclient"
 	"github.com/golang/mock/gomock"
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/mockclient"
 	"github.com/google/trillian"
 	"github.com/google/trillian/types"
 )

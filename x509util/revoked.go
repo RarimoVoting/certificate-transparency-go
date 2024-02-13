@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509/pkix"
 )
 
 // RevocationReasonToString generates a string describing a revocation reason code.

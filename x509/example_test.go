@@ -11,7 +11,7 @@ import (
 	"encoding/pem"
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 	"golang.org/x/crypto/ed25519"
 )
 

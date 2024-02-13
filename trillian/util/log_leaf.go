@@ -17,8 +17,8 @@ package util
 import (
 	"crypto/sha256"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/tls"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
 	"github.com/google/trillian"
 	"k8s.io/klog/v2"
 )

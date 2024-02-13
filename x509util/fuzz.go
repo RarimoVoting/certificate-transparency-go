@@ -14,7 +14,7 @@
 
 package x509util
 
-import "github.com/google/certificate-transparency-go/x509"
+import "github.com/RarimoVoting/certificate-transparency-go/x509"
 
 // Fuzz is a go-fuzz (https://github.com/dvyukov/go-fuzz) entrypoint
 // for fuzzing the parsing of X509 certificates.

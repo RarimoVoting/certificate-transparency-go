@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/google/certificate-transparency-go/internal/witness/api"
-	"github.com/google/certificate-transparency-go/internal/witness/cmd/witness/internal/witness"
+	"github.com/RarimoVoting/certificate-transparency-go/internal/witness/api"
+	"github.com/RarimoVoting/certificate-transparency-go/internal/witness/cmd/witness/internal/witness"
 	"github.com/gorilla/mux"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

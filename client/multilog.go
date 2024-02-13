@@ -23,10 +23,10 @@ import (
 	"os"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client/configpb"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/client/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 )

@@ -24,11 +24,11 @@ import (
 	"testing"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/testdata"
-	"github.com/google/certificate-transparency-go/tls"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
+	"github.com/RarimoVoting/certificate-transparency-go/testdata"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
 	"github.com/google/trillian/monitoring"
 )
 

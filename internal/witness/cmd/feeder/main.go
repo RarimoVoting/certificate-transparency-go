@@ -30,11 +30,11 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	wh "github.com/google/certificate-transparency-go/internal/witness/client/http"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/loglist3"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	wh "github.com/RarimoVoting/certificate-transparency-go/internal/witness/client/http"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
 	"k8s.io/klog/v2"
 )
 

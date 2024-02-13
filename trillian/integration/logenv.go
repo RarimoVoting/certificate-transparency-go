@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian"
 	"github.com/google/trillian/client"
 	"github.com/google/trillian/monitoring/prometheus"

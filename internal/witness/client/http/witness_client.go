@@ -26,7 +26,7 @@ import (
 	"net/url"
 	"os"
 
-	wit_api "github.com/google/certificate-transparency-go/internal/witness/api"
+	wit_api "github.com/RarimoVoting/certificate-transparency-go/internal/witness/api"
 )
 
 // ErrSTHTooOld is returned if the STH passed to Update needs to be updated.

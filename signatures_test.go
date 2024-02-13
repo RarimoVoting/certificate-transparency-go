@@ -25,7 +25,7 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
 )
 
 const (

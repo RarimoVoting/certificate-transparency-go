@@ -31,8 +31,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian"
 	"github.com/google/trillian/crypto/keys"
 	"github.com/google/trillian/crypto/keys/der"

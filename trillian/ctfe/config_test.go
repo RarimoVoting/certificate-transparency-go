@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian/crypto/keyspb"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"

@@ -15,8 +15,8 @@
 package loglist3
 
 import (
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"k8s.io/klog/v2"
 )
 

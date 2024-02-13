@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/schedule"
+	"github.com/RarimoVoting/certificate-transparency-go/schedule"
 	"github.com/google/trillian/monitoring"
 )
 

@@ -30,13 +30,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/certificate-transparency-go/ctutil"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/ctutil"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 var (

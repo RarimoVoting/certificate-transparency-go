@@ -10,7 +10,7 @@ serving production logs!
 - go tooling
 - git checkouts of:
   - github.com/google/trillian
-  - github.com/google/certificate-transparency-go
+  - github.com/RarimoVoting/certificate-transparency-go
 
 The instructions below assume you've checked out the repositories within
 `/workspaces/`, but if you have them in another location then just use a different

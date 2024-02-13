@@ -94,13 +94,13 @@ careful not to [re-use test keys](#key-management)).
 
 This repository includes a couple of tools to help with this testing.  Firstly,
 the
-[`preloader` tool](https://github.com/google/certificate-transparency-go/blob/master/preload/preloader)
+[`preloader` tool](https://github.com/RarimoVoting/certificate-transparency-go/blob/master/preload/preloader)
 allows the contents of a source log to be copied into a destination log.  This
 tool has command-line options to control its parallelism, but is fundamentally
 a single-process executable.
 
 The other load-testing tool is the
-[`ct_hammer`](https://github.com/google/certificate-transparency-go/blob/master/trillian/integration/ct_hammer),
+[`ct_hammer`](https://github.com/RarimoVoting/certificate-transparency-go/blob/master/trillian/integration/ct_hammer),
 which tests all of the
 [RFC 6962 entrypoints](https://tools.ietf.org/html/rfc6962#section-4) with both
 valid and invalid inputs.

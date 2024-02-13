@@ -22,7 +22,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/google/certificate-transparency-go/internal/witness/cmd/witness/impl"
+	"github.com/RarimoVoting/certificate-transparency-go/internal/witness/cmd/witness/impl"
 	"gopkg.in/yaml.v3"
 	"k8s.io/klog/v2"
 )

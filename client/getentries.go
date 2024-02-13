@@ -19,8 +19,8 @@ import (
 	"errors"
 	"strconv"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 // GetRawEntries exposes the /ct/v1/get-entries result with only the JSON parsing done.

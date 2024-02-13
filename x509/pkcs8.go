@@ -10,8 +10,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/x509/pkix"
 
 	// TODO(robpercival): change this to crypto/ed25519 when Go 1.13 is min version
 	"golang.org/x/crypto/ed25519"

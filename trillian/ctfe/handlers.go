@@ -30,11 +30,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/util"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/util"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"github.com/google/trillian"
 	"github.com/google/trillian/monitoring"
 	"github.com/google/trillian/types"
@@ -43,7 +43,7 @@ import (
 	"google.golang.org/protobuf/encoding/prototext"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 var (

@@ -20,8 +20,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
 )
 
 // NewLogger() test

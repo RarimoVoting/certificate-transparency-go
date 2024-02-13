@@ -9,7 +9,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/google/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
 )
 
 // pkcs1PrivateKey is a structure which mirrors the PKCS#1 ASN.1 for an RSA private key.

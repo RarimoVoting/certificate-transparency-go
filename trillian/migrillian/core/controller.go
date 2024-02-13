@@ -23,10 +23,10 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/scanner"
-	"github.com/google/certificate-transparency-go/trillian/migrillian/configpb"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/scanner"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/migrillian/configpb"
 	"k8s.io/klog/v2"
 
 	"github.com/google/trillian/monitoring"

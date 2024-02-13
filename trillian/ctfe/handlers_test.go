@@ -32,13 +32,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/mockclient"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/testdata"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/util"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"github.com/golang/mock/gomock"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/mockclient"
-	"github.com/google/certificate-transparency-go/trillian/testdata"
-	"github.com/google/certificate-transparency-go/trillian/util"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/trillian"
@@ -50,9 +50,9 @@ import (
 	"google.golang.org/protobuf/proto"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	cttestonly "github.com/google/certificate-transparency-go/trillian/ctfe/testonly"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
+	cttestonly "github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/testonly"
 )
 
 // Arbitrary time for use in tests

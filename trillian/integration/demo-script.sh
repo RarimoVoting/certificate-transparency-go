@@ -12,13 +12,13 @@ if [[ ! -d "${GOPATH}" ]]; then
   echo "Error: GOPATH not set"
   exit 1
 fi
-if [[ ${PWD} -ef ${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/integration ]]; then
+if [[ ${PWD} -ef ${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/integration ]]; then
   echo "Error: cannot run from directory ${PWD}; try: cd ../..; ./trillian/integration/demo-script.sh"
   exit 1
 fi
 
 echo 'Prepared before demo: edit trillian/integration/demo-script.cfg to fill in local GOPATH'
-sed "s~@TESTDATA@~${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/testdata~" ${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/integration/demo-script.cfg > demo-script.cfg
+sed "s~@TESTDATA@~${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/testdata~" ${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/integration/demo-script.cfg > demo-script.cfg
 
 echo '-----------------------------------------------'
 set -x
@@ -50,7 +50,7 @@ echo 'Manually edit CT config file to put the tree ID value in place of @TREE_ID
 sed -i'.bak' "1,/@TREE_ID@/s/@TREE_ID@/${tree_id}/" demo-script.cfg
 
 echo 'Building CT personality code'
-go build github.com/google/certificate-transparency-go/trillian/ctfe/ct_server
+go build github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/ct_server
 
 echo 'Running the CT personality (do in separate terminal)'
 ./ct_server --log_config=demo-script.cfg --log_rpc_server=localhost:6962 --http_endpoint=localhost:6965 &
@@ -61,10 +61,10 @@ echo 'Log is now accessible -- see in browser window'
 ${URLOPEN} http://localhost:6965/athos/ct/v1/get-sth
 
 echo 'But is has no data, so building the Hammer test tool'
-go build github.com/google/certificate-transparency-go/trillian/integration/ct_hammer
+go build github.com/RarimoVoting/certificate-transparency-go/trillian/integration/ct_hammer
 
 echo 'Hammer time'
-./ct_hammer --log_config demo-script.cfg --ct_http_servers=localhost:6965 --mmd=30s --testdata_dir=${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/testdata --logtostderr &
+./ct_hammer --log_config demo-script.cfg --ct_http_servers=localhost:6965 --mmd=30s --testdata_dir=${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/testdata --logtostderr &
 hammer_pid=$!
 
 echo 'After waiting for a while, refresh the browser window to see a bigger tree'
@@ -78,7 +78,7 @@ echo 'Now lets add another log.  First kill the hammer'
 kill -9 ${hammer_pid}
 
 echo 'Provision a log and remember the its tree ID'
-tree_id_2=$(./createtree --admin_server=localhost:6962 --private_key_format=PrivateKey --pem_key_path=${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/testdata/log-rpc-server.privkey.pem --pem_key_password=towel --signature_algorithm=ECDSA)
+tree_id_2=$(./createtree --admin_server=localhost:6962 --private_key_format=PrivateKey --pem_key_path=${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/testdata/log-rpc-server.privkey.pem --pem_key_password=towel --signature_algorithm=ECDSA)
 echo ${tree_id_2}
 
 echo 'Manually edit CT config file to copy the athos config to be a second config with prefix: "porthos" and with the new tree ID'
@@ -94,14 +94,14 @@ echo 'See the new (empty) log'
 ${URLOPEN} http://localhost:6965/porthos/ct/v1/get-sth
 
 echo 'Double Hammer time (note changed --log_config)'
-./ct_hammer --log_config demo-script-2.cfg --ct_http_servers=localhost:6965 --mmd=30s --testdata_dir=${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/testdata --logtostderr &
+./ct_hammer --log_config demo-script-2.cfg --ct_http_servers=localhost:6965 --mmd=30s --testdata_dir=${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/testdata --logtostderr &
 hammer_pid=$!
 
 
 sleep 30
 
 echo 'Remember to kill off all of the jobs, so their (hard-coded) ports get freed up.  Shortcut:'
-${GOPATH}/src/github.com/google/certificate-transparency-go/trillian/integration/ct_killall.sh
+${GOPATH}/src/github.com/RarimoVoting/certificate-transparency-go/trillian/integration/ct_killall.sh
 echo '...but ct_killall does not kill the hammer'
 killall -9 ct_hammer
 

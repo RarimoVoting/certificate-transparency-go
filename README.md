@@ -1,8 +1,8 @@
 # Certificate Transparency: Go Code
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/google/certificate-transparency-go)](https://goreportcard.com/report/github.com/google/certificate-transparency-go)
-[![GoDoc](https://godoc.org/github.com/google/certificate-transparency-go?status.svg)](https://godoc.org/github.com/google/certificate-transparency-go)
-![CodeQL workflow](https://github.com/google/certificate-transparency-go/actions/workflows/codeql.yml/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/RarimoVoting/certificate-transparency-go)](https://goreportcard.com/report/github.com/RarimoVoting/certificate-transparency-go)
+[![GoDoc](https://godoc.org/github.com/RarimoVoting/certificate-transparency-go?status.svg)](https://godoc.org/github.com/RarimoVoting/certificate-transparency-go)
+![CodeQL workflow](https://github.com/RarimoVoting/certificate-transparency-go/actions/workflows/codeql.yml/badge.svg)
 
 This repository holds Go code related to
 [Certificate Transparency](https://www.certificate-transparency.org/) (CT).  The

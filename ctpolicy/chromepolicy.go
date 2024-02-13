@@ -15,8 +15,8 @@
 package ctpolicy
 
 import (
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 // ChromeCTPolicy implements logic for complying with Chrome's CT log policy

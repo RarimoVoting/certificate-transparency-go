@@ -7,7 +7,7 @@ CT_CFG=
 CT_LIFECYCLE_CFG=
 CT_COMBINED_CFG=
 PROMETHEUS_CFGDIR=
-readonly CT_GO_PATH=$(go list -f '{{.Dir}}' github.com/google/certificate-transparency-go)
+readonly CT_GO_PATH=$(go list -f '{{.Dir}}' github.com/RarimoVoting/certificate-transparency-go)
 
 # ct_prep_test prepares a set of running processes for a CT test.
 # Parameters:
@@ -28,7 +28,7 @@ ct_prep_test() {
   echo "PREP: Trillian: ${RPC_SERVER_1} [${RPC_SERVERS}]"
 
   echo "Building CT personality code"
-  go build github.com/google/certificate-transparency-go/trillian/ctfe/ct_server
+  go build github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/ct_server
 
   echo "Provisioning logs for CT"
   ct_provision "${RPC_SERVER_1}"

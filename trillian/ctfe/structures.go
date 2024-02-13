@@ -21,7 +21,7 @@ import (
 	"crypto"
 	"crypto/sha256"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 const millisPerNano int64 = 1000 * 1000

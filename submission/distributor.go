@@ -23,17 +23,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/ctpolicy"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/ctpolicy"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"github.com/google/trillian/monitoring"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 var (

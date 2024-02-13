@@ -23,7 +23,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 // ReadPossiblePEMFile loads data from a file which may be in DER format

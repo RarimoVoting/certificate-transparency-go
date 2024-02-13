@@ -21,7 +21,7 @@
 package configpb
 
 import (
-	configpb "github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	configpb "github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
 	keyspb "github.com/google/trillian/crypto/keyspb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"

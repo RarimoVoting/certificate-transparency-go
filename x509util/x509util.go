@@ -30,12 +30,12 @@ import (
 	"net"
 	"strconv"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/gossip/minimal/x509ext"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/gossip/minimal/x509ext"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509/pkix"
 )
 
 // OIDForStandardExtension indicates whether oid identifies a standard extension.

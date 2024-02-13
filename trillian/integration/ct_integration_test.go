@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian/crypto/keyspb"
 	"github.com/google/trillian/storage/testdb"
 	"google.golang.org/protobuf/types/known/anypb"

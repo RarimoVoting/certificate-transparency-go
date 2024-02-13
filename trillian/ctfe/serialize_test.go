@@ -19,15 +19,15 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/testonly"
-	"github.com/google/certificate-transparency-go/trillian/testdata"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/testonly"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/testdata"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 	"github.com/google/trillian/crypto/keys/pem"
 	"github.com/kylelemons/godebug/pretty"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 func TestBuildV1MerkleTreeLeafForCert(t *testing.T) {

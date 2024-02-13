@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/testdata"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/RarimoVoting/certificate-transparency-go/loglist3"
+	"github.com/RarimoVoting/certificate-transparency-go/testdata"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509util"
 )
 
 func getTestCertPEMShort() *x509.Certificate {

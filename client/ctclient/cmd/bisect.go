@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"sort"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 	"github.com/spf13/cobra"
 	"k8s.io/klog/v2"
 )

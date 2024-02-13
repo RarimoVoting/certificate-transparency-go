@@ -20,6 +20,6 @@ package ct
 // See https://developers.google.com/protocol-buffers/docs/proto#packages and
 // https://github.com/golang/protobuf/issues/1122
 
-//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/google/trillian) -I$(go list -f '{{ .Dir }}' github.com/google/certificate-transparency-go) --go_out=paths=source_relative:. trillian/ctfe/configpb/config.proto"
-//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/google/trillian) -I$(go list -f '{{ .Dir }}' github.com/google/certificate-transparency-go) --go_out=paths=source_relative:. trillian/migrillian/configpb/config.proto"
-//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/google/certificate-transparency-go) --go_out=paths=source_relative:. client/configpb/multilog.proto"
+//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/google/trillian) -I$(go list -f '{{ .Dir }}' github.com/RarimoVoting/certificate-transparency-go) --go_out=paths=source_relative:. trillian/ctfe/configpb/config.proto"
+//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/google/trillian) -I$(go list -f '{{ .Dir }}' github.com/RarimoVoting/certificate-transparency-go) --go_out=paths=source_relative:. trillian/migrillian/configpb/config.proto"
+//go:generate sh -c "protoc -I=. -I$(go list -f '{{ .Dir }}' github.com/RarimoVoting/certificate-transparency-go) --go_out=paths=source_relative:. client/configpb/multilog.proto"

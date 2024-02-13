@@ -21,9 +21,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 var newFixAndLogTests = []fixAndLogTest{

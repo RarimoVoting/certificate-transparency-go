@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/google/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
 )
 
 const ecPrivKeyVersion = 1

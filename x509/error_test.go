@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 func TestErrors(t *testing.T) {

@@ -26,12 +26,12 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/preload"
-	"github.com/google/certificate-transparency-go/scanner"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
+	"github.com/RarimoVoting/certificate-transparency-go/preload"
+	"github.com/RarimoVoting/certificate-transparency-go/scanner"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 	"k8s.io/klog/v2"
 )
 

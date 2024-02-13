@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 	"github.com/google/trillian"
 	"github.com/google/trillian/types"
 	"google.golang.org/protobuf/encoding/prototext"

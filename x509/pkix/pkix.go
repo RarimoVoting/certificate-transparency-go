@@ -12,7 +12,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/google/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
 )
 
 // AlgorithmIdentifier represents the ASN.1 structure of the same name. See RFC

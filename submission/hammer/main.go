@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/schedule"
-	"github.com/google/certificate-transparency-go/submission"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/schedule"
+	"github.com/RarimoVoting/certificate-transparency-go/submission"
 )
 
 // Default number of submissions is intentionally low.

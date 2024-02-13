@@ -33,7 +33,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 var output = flag.String("output", "root_darwin_armx.go", "file name to write")

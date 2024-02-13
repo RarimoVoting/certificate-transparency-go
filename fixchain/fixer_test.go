@@ -19,7 +19,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 )
 
 // NewFixer() test

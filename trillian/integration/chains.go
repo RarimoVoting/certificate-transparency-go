@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 // ChainGenerator encapsulates objects that can generate certificate chains for testing.

@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
 )
 
 func dh(h string) []byte {

@@ -10,7 +10,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
 )
 
 // IPAddressPrefix describes an IP address prefix as an ASN.1 bit string,

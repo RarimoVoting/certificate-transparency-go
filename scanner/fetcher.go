@@ -20,8 +20,8 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/jsonclient"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
+	"github.com/RarimoVoting/certificate-transparency-go/jsonclient"
 	"github.com/google/trillian/client/backoff"
 	"k8s.io/klog/v2"
 )

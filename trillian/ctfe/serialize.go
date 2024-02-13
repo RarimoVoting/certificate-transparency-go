@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/google/certificate-transparency-go/tls"
+	"github.com/RarimoVoting/certificate-transparency-go/tls"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/RarimoVoting/certificate-transparency-go"
 )
 
 // SignatureCache is a one-entry cache that stores the last generated signature

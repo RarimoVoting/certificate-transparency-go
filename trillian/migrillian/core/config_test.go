@@ -19,8 +19,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/testonly"
-	"github.com/google/certificate-transparency-go/trillian/migrillian/configpb"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/ctfe/testonly"
+	"github.com/RarimoVoting/certificate-transparency-go/trillian/migrillian/configpb"
 	"github.com/google/trillian/crypto/keyspb"
 )
 

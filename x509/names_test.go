@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/RarimoVoting/certificate-transparency-go/asn1"
+	"github.com/RarimoVoting/certificate-transparency-go/x509/pkix"
 )
 
 func TestParseGeneralNames(t *testing.T) {

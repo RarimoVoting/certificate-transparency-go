@@ -112,8 +112,8 @@ main() {
       if [[ ${coverage} -eq 1 ]]; then
         # Transform $d to a smaller, valid file name.
         # For example:
-        # * github.com/google/certificate-transparency-go becomes c-t-go.out
-        # * github.com/google/certificate-transparency-go/cmd/createtree/keys becomes
+        # * github.com/RarimoVoting/certificate-transparency-go becomes c-t-go.out
+        # * github.com/RarimoVoting/certificate-transparency-go/cmd/createtree/keys becomes
         #   c-t-go-cmd-createtree-keys.out
         local profile="${d}.out"
         profile="${profile#github.com/*/}"

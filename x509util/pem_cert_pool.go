@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/RarimoVoting/certificate-transparency-go/x509"
 	"k8s.io/klog/v2"
 )
 

@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/client"
+	"github.com/RarimoVoting/certificate-transparency-go/client"
 	"github.com/spf13/cobra"
 	"github.com/transparency-dev/merkle/proof"
 	"github.com/transparency-dev/merkle/rfc6962"
