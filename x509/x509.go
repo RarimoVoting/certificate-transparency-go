@@ -626,11 +626,12 @@ func getPublicKeyAlgorithmFromOID(oid asn1.ObjectIdentifier) PublicKeyAlgorithm 
 // NB: secp256r1 is equivalent to prime256v1,
 // secp192r1 is equivalent to ansix9p192r and prime192v1
 var (
-	OIDNamedCurveP224 = asn1.ObjectIdentifier{1, 3, 132, 0, 33}
-	OIDNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
-	OIDNamedCurveP384 = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
-	OIDNamedCurveP521 = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
-	OIDNamedCurveP192 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 1}
+	OIDNamedCurveP224   = asn1.ObjectIdentifier{1, 3, 132, 0, 33}
+	OIDNamedCurveP256   = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
+	OIDNamedCurveP384   = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
+	OIDNamedCurveP521   = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
+	OIDNamedCurveP192   = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 1}
+	OIDNamedCurveP192_2 = asn1.ObjectIdentifier{1, 2, 840, 10045, 1, 1}
 )
 
 func namedCurveFromOID(oid asn1.ObjectIdentifier, nfe *NonFatalErrors) elliptic.Curve {
@@ -644,7 +645,8 @@ func namedCurveFromOID(oid asn1.ObjectIdentifier, nfe *NonFatalErrors) elliptic.
 	case oid.Equal(OIDNamedCurveP521):
 		return elliptic.P521()
 	case oid.Equal(OIDNamedCurveP192):
-		nfe.AddError(errors.New("insecure curve (secp192r1) specified"))
+		return secp192r1()
+	case oid.Equal(OIDNamedCurveP192_2):
 		return secp192r1()
 	}
 	return nil
@@ -1432,7 +1434,18 @@ func parsePublicKey(algo PublicKeyAlgorithm, keyData *publicKeyInfo, nfe *NonFat
 		namedCurveOID := new(asn1.ObjectIdentifier)
 		rest, err := asn1.Unmarshal(paramsData, namedCurveOID)
 		if err != nil {
-			return nil, errors.New("x509: failed to parse ECDSA parameters as named curve")
+			algoParams := new(SECP192r1Params)
+			algoParams.Integer1 = new(big.Int)
+			algoParams.Integer2 = new(big.Int)
+			algoParams.Integer3 = new(big.Int)
+			algoParams.PrimeFieldSeq.Integer = new(big.Int)
+
+			rest, err = asn1.Unmarshal(paramsData, algoParams)
+			if err != nil {
+				return nil, errors.New("x509: failed to parse ECDSA parameters as named curve")
+			}
+
+			namedCurveOID = &algoParams.PrimeFieldSeq.PrimeField
 		}
 		if len(rest) != 0 {
 			return nil, errors.New("x509: trailing data after ECDSA parameters")
@@ -1456,6 +1469,22 @@ func parsePublicKey(algo PublicKeyAlgorithm, keyData *publicKeyInfo, nfe *NonFat
 	default:
 		return nil, nil
 	}
+}
+
+type SECP192r1Params struct {
+	Integer1      *big.Int
+	PrimeFieldSeq struct {
+		PrimeField asn1.ObjectIdentifier
+		Integer    *big.Int
+	}
+	ParamsSeq struct {
+		OctetStr1 asn1.RawValue
+		OctetStr2 asn1.RawValue
+		BitStr    asn1.RawValue
+	}
+	OctetStr1 asn1.RawValue
+	Integer2  *big.Int
+	Integer3  *big.Int
 }
 
 // NonFatalErrors is an error type which can hold a number of other errors.
